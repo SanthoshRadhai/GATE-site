@@ -14,7 +14,7 @@ const config: QuartzConfig = {
     enablePopovers: true,
     analytics: null,
     locale: "en-US",
-    baseUrl: "santhoshradhai.me/GATE-site",
+    baseUrl: "gate.santhoshradhai.me",
     ignorePatterns: ["private", "templates", ".obsidian", "**/.obsidian", "Source", "**/*.zip", "**/*.pdf"],
     defaultDateType: "modified",
     theme: {
