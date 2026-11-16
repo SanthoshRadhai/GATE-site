@@ -7,9 +7,8 @@ SRC="${1:-../GATE}"
 DEST="$(cd "$(dirname "$0")/.." && pwd)/content"
 
 rsync -a --delete \
-  --exclude 'index.md' \
   --exclude '.git' --exclude '.github' --exclude '.gitignore' \
-  --exclude '.obsidian' --exclude '.trash' \
+  --exclude '.obsidian' --exclude '.trash' --exclude '.claude' \
   --exclude 'Source' --exclude '*.zip' --exclude '*.pdf' \
   "$SRC"/ "$DEST"/
 
